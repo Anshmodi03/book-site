@@ -1,0 +1,23 @@
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 300px; /* Adjust as needed */
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.image.active {
+  opacity: 1; /* Show the active image */
+}
+
+.image.transition {
+  transition: all 1s ease-in-out; /* Smooth transition when transitioning */
+}
